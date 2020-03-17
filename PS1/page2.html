@@ -23,6 +23,9 @@
       margin: 0 auto;
     }
     svg { cursor: pointer }
+    #box:checked + svg {
+     fill: red;
+    }
     [class^=notification] {
       position: fixed;
       top: 10px;
@@ -73,8 +76,8 @@
       <input id="file" type="file" accept=".zip">
     </div>
     <div class="control">
-      <label>Вам понравилось это задание?</label>
-      <label for="box">
+      <label for="box">Вам понравилось это задание?</label>
+      <label>
         <input id="box" type="checkbox">
         <svg height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
           <path d="m22.128 3.901c-1.21-1.226-2.819-1.901-4.532-1.901s-3.321.675-4.531 1.9l-1.065 1.08-1.065-1.079c-1.21-1.226-2.819-1.901-4.531-1.901-1.713 0-3.322.675-4.532 1.901-2.491 2.524-2.491 6.631 0 9.153l9.594 9.722c.141.144.333.224.534.224s.393-.08.534-.224l9.594-9.721c2.491-2.523 2.491-6.629 0-9.154z" fill="#FFFFFF"/>
